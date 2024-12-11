@@ -1,0 +1,1917 @@
+.container {
+	width: 100vw; /* makes sure that the "container" div is stretched to the left and right edges of our web browser */
+	height: auto;
+	position: relative;
+	overflow: hidden;
+}
+
+section {
+	position: relative; /* This is needed so that all of our CSS positionings will work within all of our sections */
+}
+
+/* Navigation Bar */
+.navigation {
+	width: 100vw;
+	height: 60px;
+	/* border: solid #D9D9D980 2px; */
+	background: 12121E, .5;
+	position: fixed; /* Here, we use fixed positioning so that our nav bar always stays on top of the page */
+	z-index: 3; /* having a z-index larger than 0 ensures that our nav bar is on top of other content on the page */
+	background-color: rgba(18, 18, 30, 0.9);
+	padding: 10px;
+
+
+
+}
+
+ul {
+	list-style: none; /* this removes bullet points on our "list" */
+	/* background-image: url(../images/CNVLlogo.png) no-repeat;
+	height: 50px;
+	width:auto;
+	border: solid white 2px;
+	position: relative; */
+
+}
+
+
+
+li {
+	float: right; /* makes all of our links on the right side of the nav bar */
+	margin-left: 10px;  /* gives 20px of spacing between each text link */
+	margin-top: 10px;
+	z-index: 2;
+	font-family: "objektiv-mk1", sans-serif;
+	height: 8px;
+	width: auto;
+	font-size: .8em;
+	font-weight: 400;
+	border-radius: 8px;
+	font-style: normal;
+	border-radius: 4%;
+	display: inline-flex;
+	padding: 18px 18px;
+	justify-content: center;
+	align-items: center;
+	transition: color 0.3s ease; /* Smooth transition effect */
+	color: white;
+
+
+}
+
+
+
+a {
+	color: white;
+	text-decoration: none; /* removes the underline and blue color of our text links */
+}
+
+.a:hover {
+	color: #8C75FF;
+}
+
+.a:active {
+	color: #9c9aa6;
+
+}
+
+
+li:last-child { /* last-child only targets the last item on our list, which is our home page link */
+	float: left; /* make sure that the home page link is on the left of the page, not the right */
+	height: 10px;
+	padding:17px;
+	width: 108px;
+	background-image: url(../images/CNVLlogo.png) no-repeat;
+	position: relative; 
+	
+
+}
+
+
+/* Home Page CSS */
+
+.copamainpic { /* this is the hero image area */
+	width: 100vw; /* makes sure that this section stretches to the entire width of the web browser */
+	height: 230vh; /* same idea but for the vertical height of the web browser */
+	background: url(../images/2fa913c64493a4d2b0d686b2958867a1.jpeg) no-repeat center center;
+	background-size: cover;
+	position: relative;
+	align-items: center;
+}
+
+.mainpic { /* this is the hero image area */
+	width: 100vw; /* makes sure that this section stretches to the entire width of the web browser */
+	height: 230vh; /* same idea but for the vertical height of the web browser */
+	background: url(../images/Headerimage1.png) no-repeat center center;
+background-size: cover;
+	position: relative;
+	align-items: center;
+}
+
+.infomainpic { /* this is the hero image area */
+	width: 100vw; /* makes sure that this section stretches to the entire width of the web browser */
+	height: 230vh; /* same idea but for the vertical height of the web browser */
+	background: url(../images/bfc3666d-7def-4b3d-ac2f-3afbd1395f6b.jpg) no-repeat center center;
+	background-size: cover;
+	position: relative;
+	align-items: center;
+	background-position: 30%;
+}
+
+.purplecurve {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+}
+
+.styled-image {
+	position: absolute;
+	top: 1600px;
+	width: 1000px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.styled-image2 {
+	height: auto;
+	padding:10px;
+	width: 140px;
+	/* border: white solid 1px; */
+
+}	
+
+.overlay {
+	width: 100%; 
+	height: auto;
+	background-color: (#21213A);
+}
+
+
+
+
+
+.wrapper {
+	width: 1200px; /* this section has a fixed width. I recommend doing this for everything outside of the hero image section */
+	height: 3700px;
+	background: #ECEBF1;
+	margin: auto; /* makes sure that the section is centered on the page */
+}
+
+
+.infowrapper {
+	width: 1200px; /* this section has a fixed width. I recommend doing this for everything outside of the hero image section */
+	height: 3200px;
+	background: #ECEBF1;
+	margin: auto; /* makes sure that the section is centered on the page */
+}
+
+/* .copy {
+	font-family:"objektiv-mk1",sans-serif;
+	font-weight:400;
+	font-style: normal;
+	color: white;
+	font-family:"objektiv-mk1",sans-serif;
+	font-weight:400;
+	font-style: normal;
+	font-size: 1em;
+	position: absolute;
+	line-height: 1.5;
+} */
+
+/* Type */
+
+@font-face {
+	font-family: "Crafter-Regular";
+	src: url(../Crafter-Regular.otf);
+}
+
+/* For XL Main header */
+h1 {
+	font-size: 6em;
+	color: white;
+	position: absolute;
+	left: 50%;
+	top: 350px;
+	transform: translate(-50%,-50%);
+	font-family: "alfarn-2", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	letter-spacing: 2px;
+}
+
+/* For Rio de Janerio Rough Type */
+h2 {
+	font-family: "baka-too", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 4em;
+	color: white;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%); /* translateX only moves the object horizontally */
+	top: 240px;
+}
+
+/* For Secondhary Headlines */
+.blocktitle {
+	color:#21213A;
+	width: 500px;
+	position: absolute;
+	top: 100px;
+	left: 350px;
+	font-size: 2em;
+}
+
+.right {
+	width: 400px;
+	left: 950px;
+}
+
+.blocktitle3 {
+	color:#21213A;
+	width: 400px;
+	position: absolute;
+	top: 100px;
+	left: 300px;
+	font-size: 2em;
+}
+
+.headerbt {
+	font-family:"objektiv-mk1",sans-serif;
+	font-weight:400;
+	font-style: normal;
+	color: white;
+	transition: color all 0.5s ease; /* Smooth transition */
+	color: black;
+  text-decoration: none;
+  padding: 16px 24px;
+  transition: all 0.2s ease;
+
+}
+
+.navactive {
+	background-color: #FF45AB;
+	border-radius: 6px;
+}
+
+.headerbt:hover {
+	background-color: #4B27FF;
+	border-radius: 6px;
+
+}
+
+.headerbt:active{
+	color: #4B27FF;
+	  
+}
+
+
+h3 {
+	font-family: "Krona One", sans-serif;
+  	font-weight: 400;
+ 	 font-style: normal;
+	font-size: 2.5em;
+	color: white;
+	position: absolute;
+	text-align: center;
+}
+
+.countdownsubhead {
+	font-size: 1.7em;
+	text-align: center;
+	top: 1770px;
+
+}
+
+#months {
+	top: 1770px;
+	left: 440px;
+	position: absolute;
+}
+
+#days {
+	top: 1770px;
+	left: 820px;
+	position: absolute;
+}
+
+#hours {
+	top: 1770px;
+	left: 1180px;
+	position: absolute;
+}
+
+h5{
+	font-family: "Krona One", sans-serif;
+  	font-weight: 400;
+ 	 font-style: normal;
+	font-size: 2.5em;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: left;
+	line-height: 1.1;
+}
+
+.countdowntxt {
+	font-family: "Krona One", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 2.5em;
+	color: white;
+	position: absolute;
+	top: 1850px;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+}
+
+.subhead {
+	position: absolute;
+	top: 850px;
+	width: 1000px
+	
+}
+
+.greatestshowonearth {
+	position: absolute;
+	top: 900px;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	
+
+}
+
+.sambadromeimg {
+	background-image: url(../images/sambadromeimg.jpg);
+	position: relative;
+	height: 450px;
+	width: 550px;
+	top: 100px;
+	left: 550px;
+	overflow: hidden;
+}
+
+.block {
+	width: 1200px;
+	height: 700px;
+	align-items: center;
+	justify-content: left;
+	position: relative;
+	overflow: hidden;
+	/* border: solid black 1px; */
+	/* border-bottom: solid gray 1px; */
+	padding-bottom: 100px;
+
+}
+
+.copablock {
+	width: 1200px;
+	height: 900px;
+	align-items: center;
+	justify-content: left;
+	position: relative;
+	overflow: hidden;
+	/* border: solid black 1px; */
+	/* border-bottom: solid gray 1px; */
+	padding-bottom: 100px;
+
+}
+
+.tallblock {
+	width: 1200px;
+	height: 900px;
+	align-items: center;
+	justify-content: left;
+	position: relative;
+	overflow: hidden;
+	/* border: solid black 1px; */
+}
+
+.panoblock {
+	width: 1200px;
+	height: 500px;
+	align-items: center;
+	justify-content: left;
+	position: relative;
+	overflow: hidden;
+	/* border: solid black 1px; */
+}
+
+.streetimg {
+	background-image: url(../images/streetpartiesimgg.jpg);
+	background-color: #5937FF;	
+	position: absolute;
+	height: 550px;
+	width: 550px;
+	top: 100px;
+	left: 100px;
+}
+
+.copaimg {
+	background-image: url(../images/homcopa.jpg);
+	position: relative;
+	height: 400px;
+	width: 550px;
+	top: 100px;
+	left: 550px;
+	overflow: hidden;
+	object-fit: cover;
+}
+
+.homescroll {
+    display: flex;
+	flex-direction: column; 
+    /* border: 1px solid black; */
+	height: 3700px;
+	width: 1200px;
+	position: absolute;
+	top: 0px;
+  }
+
+  .infoscroll {
+	display: flex;
+	flex-direction: column; 
+    /* border: 1px solid black; */
+	height: 3000px;
+	width: 1200px;
+	position: absolute;
+	top: 0px;
+  }
+
+/* BUTTONS */
+
+.linebutton {
+	display: inline-flex;
+	height: 60px;
+	padding: 18px 24px;
+	border-radius: 8px;
+	border: #000000 solid 2px; /* Variant 0 color */
+	top: 530px;
+	left: 100px;
+	z-index: 2;
+	font-family: "objektiv-mk1", sans-serif;
+	font-size: 1em;
+	font-weight: 700;
+	font-style: normal;
+	color: black;
+	background-color: #8c75ff00;
+	position: absolute;
+	transition: all .2s ease;
+
+
+}
+
+.linebutton2 {
+	display: inline-flex;
+	height: 60px;
+	padding: 18px 24px;
+	border-radius: 8px;
+	border: #000000 solid 2px; /* Variant 0 color */
+	top: 530px;
+	left: 750px;
+	z-index: 2;
+	font-family: "objektiv-mk1", sans-serif;
+	font-size: 1em;
+	font-weight: 700;
+	font-style: normal;
+	color: black;
+	background-color: #8c75ff00;
+	position: absolute;
+	transition: all .2s ease;
+
+
+
+}
+
+.linebutton2:active {
+	background-color: #FF45AB;
+	border: #FF45AB solid 2px;
+	color: white;
+	transition: all .2s ease;
+	transform: scale(1.1); /* Makes the button 10% larger */
+}
+
+.linebutton3 {
+	display: inline-flex;
+	height: 60px;
+	padding: 18px 24px;
+	border-radius: 8px;
+	border: #000000 solid 2px; /* Variant 0 color */
+	top: 400px;
+	left: 100px;
+	z-index: 2;
+	font-family: "objektiv-mk1", sans-serif;
+	font-size: 1em;
+	font-weight: 700;
+	font-style: normal;
+	color: black;
+	background-color: #8c75ff00;
+	position: absolute;
+	transition: all .2s ease;
+
+
+}
+.linebutton3:active {
+	background-color: #FF45AB;
+	border: #FF45AB solid 2px;
+	color: white;
+	transition: all .2s ease;
+	transform: scale(1.1); /* Makes the button 10% larger */
+
+
+}
+
+.linebutton:active {
+	background-color: #FF45AB; /* Variant 2 color */
+	border: #FF45AB solid 3px;
+	color: white;
+	transition: all .2s ease;
+	transform: scale(1.1); /* Makes the button 10% larger */
+
+
+}
+
+.purplebutton { 
+	display: inline-flex;
+	height: 60px;
+	padding: 18px 24px;
+	justify-content: center;
+	align-items: center;
+	border-radius: 8px;
+	border: #4B27FF solid 8px; /* Variant 0 color */
+	background: #4B27FF;
+	position: absolute;
+	top: 530px;
+	left: 42.5%;
+	z-index: 2;
+	font-family: "objektiv-mk1", sans-serif;
+	font-size: 1em;
+	font-weight: 700;
+	font-style: normal;
+	color: white;
+	transition: all .2s ease;
+
+}
+
+.purplebutton:active {
+	background-color: #FF45AB; /* Variant 2 color */
+	border: #FF45AB solid 8px;
+	transform: scale(1.1); /* Makes the button 10% larger */
+
+
+
+}
+h4 {
+	font-family: "Krona One", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1.5em;
+	color: #D8D0F7;
+	position: absolute;
+	top: 425px;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+}
+
+.copasub {
+	font-family: "Krona One", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1.5em;
+	color: #D8D0F7;
+	position: absolute;
+	top: 1000px;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+}
+/* Body Copy  */
+
+.copy {
+		font-family:"objektiv-mk1",sans-serif;
+		font-weight:400;
+		font-style: normal;
+		font-size: 1.2em;
+		width: 690px;
+		position: absolute;
+		top: 1000px;
+		left: 50%;
+		color: white;
+		transform: translateX(-50%);
+		column-count: 2; /* Splits content into two columns */
+		column-gap: 40px; /* Adds space between the columns */
+		line-height: 1.5;
+}
+
+.copycopa {
+	font-family:"objektiv-mk1",sans-serif;
+	font-weight:400;
+	font-style: normal;
+	font-size: 1em;
+	width: 650px;
+	position: absolute;
+	top: 1050px;
+	left: 50%;
+	color: white;
+	transform: translateX(-50%);
+	line-height: 1.5;
+	padding: 10px;
+}
+
+.blockcopy {
+	font-family:"objektiv-mk1",sans-serif;
+	font-weight:400;
+	font-style: normal;
+	color: black;
+	font-family:"objektiv-mk1",sans-serif;
+	font-weight:400;
+	font-style: normal;
+	font-size: .95em;
+	position: absolute;
+	line-height: 1.5;
+	width: 340px;
+	top: 200px;
+	left: 100px;
+}
+
+.blockcopy2 {
+	font-family:"objektiv-mk1",sans-serif;
+	font-weight:400;
+	font-style: normal;
+	color: black;
+	font-family:"objektiv-mk1",sans-serif;
+	font-weight:400;
+	font-style: normal;
+	font-size: .95em;
+	position: absolute;
+	line-height: 1.5;
+	width: 300px;
+	top: 200px;
+	left: 750px;
+}
+
+.blockcopy3 {
+	font-family:"objektiv-mk1",sans-serif;
+	font-weight:400;
+	font-style: normal;
+	color: black;
+	font-family:"objektiv-mk1",sans-serif;
+	font-weight:400;
+	font-style: normal;
+	font-size: .95em;
+	position: absolute;
+	line-height: 1.5;
+	width: 340px;
+	top: 200px;
+	left: 100px;
+}
+
+/* Section 2 */
+
+
+.blocktitle4 {
+	color:#21213A;
+	width: 400px;
+	position: absolute;
+	top: 30px;
+	left: 300px;
+	font-size: 2em;
+}
+
+.FAQcontainer {
+	width: 200px;
+	height: 320px;
+	background-color: #4B27FF;
+	/* width: 1200px;
+	height: 700px; */
+	padding: 30px 30px 30px;
+	border-radius: 10px;
+	position: relative;
+	/* gap: 60px; Space between text boxes */
+	flex-direction: column;
+	align-items: center;
+
+}
+
+.blockFAQ {
+	height: 970px;
+	width: 1200px;
+	position: relative;
+	/* border: black solid 2px; */
+	display: flex;
+	/* justify-content: space-evenly; */
+	flex-direction: row;
+	gap: 20px;
+	justify-content: center;
+	display: inline-flex;
+align-items: center;
+margin-bottom: 50px;
+
+
+
+}
+
+
+
+.question {
+	position: relative;
+	font-size: 1.3em;
+	/* color: #d2c7ff; */
+	color: white;
+
+	padding: 5px 10px 20px;
+	line-height: 1.1;
+
+
+}
+
+.answer {
+	position: relative;
+	font-size: 1em;
+	/* color: white; */
+	font-family:"objektiv-mk1",sans-serif;
+	font-weight:400;
+	font-style: normal;
+	line-height: 1.3;
+	color: #cdc3ff;
+}
+
+.faqlow {
+	width: 1200px;
+	height: 100px;
+	position: absolute;
+	top: 00px;
+	left: 0px;
+	justify-content: center;
+	display: inline-flex;
+	align-items: center;	
+	flex-direction: column;
+	/* border: #000000 solid 1px; */
+}
+
+.faqcopy {
+	position: absolute;
+	left: 300px;
+	top: 580px;
+	font-size: 1.5em;
+	/* color: white; */
+	font-family:"objektiv-mk1",sans-serif;
+	font-weight:400;
+	font-style: normal;
+	line-height: 1.3;
+	color: black;
+	width: 1200px;
+}
+
+.purplebuttonsymbol { 
+	display: inline-flex;
+	height: 60px;
+	width: 220px;
+	padding: 18px 20px;
+	justify-content: left;
+	align-items: center;
+	border-radius: 8px;
+	border: #4B27FF solid 8px; /* Variant 0 color */
+	background: #4B27FF;
+	position: relative;
+	left: 15px;
+	bottom: 10px;
+	z-index: 2;
+	font-family: "objektiv-mk1", sans-serif;
+	font-size: 1em;
+	font-weight: 700;
+	font-style: normal;
+	color: white;
+	transition: all .2s ease;
+
+
+}
+
+
+.purplebuttonsymbol:active {
+	background-color: #FF45AB; /* Variant 2 color */
+	border: #FF45AB solid 8px;
+	color: white;
+	transform: scale(1.1); /* Makes the button 10% larger */
+	transition: all .2s ease;
+
+}
+
+.purplebutton2 { 
+	display: inline-flex;
+	height: 60px;
+	padding: 18px 24px;
+	justify-content: center;
+	align-items: center;
+	border-radius: 8px;
+	border: #4B27FF solid 8px; /* Variant 0 color */
+	background: #4B27FF;
+	position: absolute;
+	top: 630px;
+	left: 42.5%;
+	z-index: 2;
+	font-family: "objektiv-mk1", sans-serif;
+	font-size: 1em;
+	font-weight: 700;
+	font-style: normal;
+	color: white;
+	transition: all .2 ease;
+
+}
+
+.purplebutton2:active {
+	background-color: #FF45AB; /* Variant 2 color */
+	border: #FF45AB solid 8px;
+	color: white;
+	transition: all .2s ease;
+	transform: scale(1.1); /* Makes the button 10% larger */
+
+
+
+}
+/* Section 3 */
+
+
+.blockblog {
+	height: 780px;
+	width: 1200px;
+	position: relative;
+	/* border: black solid 2px; */
+	margin-bottom: 80px;
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: row;
+	gap: 20px;
+	justify-content: center;
+	display: inline-flex;
+	align-items: center; 
+
+
+}
+
+.blocktitle5 {
+	color:#21213A;
+	width: 100px;
+	position: relative;
+	font-size: 2em;
+	text-align: left;
+	left: 70px;
+	top: 20px;
+
+}
+
+.black {
+	color: #000000;
+	padding: 20px;
+	font-size: .9em;
+
+}
+
+.blogcontainer {
+	width: 300px;
+	height: 300px;
+	background-color: white;
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: baseline;
+}
+
+.blogcontainer1 {
+	width: 300px;
+	height: 300px;
+	background-color: white;
+	align-items: left; 
+	display: inline-flex;
+	justify-content: left;
+	flex-direction: column;
+	gap: 30px;
+	 /* Space between text boxes */
+}
+
+.arrowright {
+	color: white;
+	padding: 8px ;
+	left: 6px;
+	position: relative;
+}
+
+
+
+.blogthumbnail {
+	overflow: hidden;
+	width: 300px;
+	height: 300px;
+	justify-content: left;
+	align-items: left;
+	position: relative;
+
+
+
+}
+
+.blogtitlebg {
+	display: inline-flex;
+	padding: 8px 8px;
+	justify-content: flex-start; /* Align text left */
+	align-items: flex-start;
+	background-color: rgba(75, 39, 255, 0.90);
+	z-index: 2;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	transition: .2s;
+
+	
+
+}
+.blogtitlebg:hover {
+	background-color: rgba(208, 39, 255, 0.9);
+
+}
+
+.blogthumbtitle {
+	font-family:"objektiv-mk1",sans-serif;
+	font-weight:400;
+	font-style: normal;
+	color: white;
+	font-size: .9em;
+	position: relative;
+	line-height: 1.5;
+	width: 200px;
+	justify-content: left;
+	bottom: 0;
+	left: 0;
+	padding: 4px 4px;
+
+
+}
+
+
+.dancing {
+	background-image: url(../images/5d37a47ba191701c0909e73cdb3e1375.jpeg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.beach {
+	background-image: url(../images/85b2bdbe8880aa6cfdf996a67889b4c2.jpeg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+}
+.two {
+	width: 1000px;
+	height: 100vh;
+	background: green;
+	margin: auto;
+	font-family:"objektiv-mk1",sans-serif;
+	font-weight:700;
+	font-style: normal;
+}
+
+.three {
+	width: 1000px;
+	height: 600px;
+	background: orange;
+	margin: auto;
+	font-family:"objektiv-mk1",sans-serif;
+	font-weight:700;
+	font-style: normal;
+}
+
+.four {
+	width: 1000px;
+	height: 300px;
+	background: violet;
+	margin: auto;
+	font-family:"objektiv-mk1",sans-serif;
+	font-weight:700;
+	font-style: normal;
+}
+
+.footer {
+	width: 100vw;
+	height:700px;
+	/* background: white; */
+	overflow: hidden;
+	/* justify-content: center;
+	align-items: center;
+	display: flex;             /* Use Flexbox for alignment */
+	position: relative; 
+	top: -100px;
+
+}
+
+.footercurve {
+	position: relative;
+	background-position: 50%;
+	left: 0;
+	width: 100vw;
+	height: 150px;	
+	background-image: url(../images/bordercurve2.png);
+	background-repeat: no-repeat;
+	background-size: stretch;
+
+}
+.footercontent {
+	width: 100vw;
+	height: 500px;
+	background-color: #4B27FF;
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 100px;
+
+
+}
+.footleft {
+	width: 500px;
+	height: 380px;
+	align-items: left;
+	position: relative;
+	display: inline-flex;
+	flex-direction: column;
+
+
+	
+}
+
+.footright {
+	width: 500px;
+	height: 380px;
+	align-items: left;
+	justify-content: left;
+	position: relative;
+	display: inline-flex;
+	flex-direction: column;
+	/* border: solid black 2px; */
+	margin-top: 40px;
+	left: 0%;
+	display: inline-flex;
+
+}
+
+
+.footlogo {
+	width: 230px;  /* Small div width */
+	height: 70px; /* Small div height */
+	overflow: hidden;
+	padding: 16px;
+  }
+  
+  .fit-image {
+	width: 100%;
+	height: 70px;
+	object-fit: contain;  /* Fit the image inside without cropping */
+  }
+
+.footsubhead {
+	position: relative;
+	font-size: 1em;
+	/* color: white; */
+	font-family:"objektiv-mk1",sans-serif;
+	font-weight:400;
+	font-style: normal;
+	line-height: 1.3;
+	color: #cdc3ff;
+	padding: 10px;
+}
+.activearea1 {
+	width: 500px;
+height: 150px;
+flex-direction: column;
+align-items: center;
+display: flex;
+
+
+}
+.typehere {
+	display: flex;
+	height: 35px;
+	width: 250px;
+	padding: 20px;
+	justify-content: left;
+	align-items: center;
+	border-radius: 8px;
+	border: #f2efff solid 1px; /* Variant 0 color */
+	background: #f2efff;
+	position: relative;
+	z-index: 2;
+	font-family: "objektiv-mk1", sans-serif;
+	font-size: .9em;
+	font-weight: 400;
+	font-style: normal;
+	color: grey;
+
+}
+
+.subbutton {
+	display: inline-flex;
+	height: 50px;
+	width: 510px;
+	padding: 18px 24px;
+	justify-content: center;
+	align-items: center;
+	border-radius: 8px;
+	border: white solid 2px; /* Variant 0 color */
+	background: #4B27FF;
+	position: relative;
+	z-index: 2;
+	font-family: "objektiv-mk1", sans-serif;
+	font-size: 1em;
+	font-weight: 700;
+	font-style: normal;
+	color: white;
+	transition: all.2s ease;
+
+}
+
+.subbutton:active {
+	background-color: #FF45AB;
+	color: white;
+	border: #FF45AB solid 2px; /* Variant 0 color */
+	transition: all .2s ease;
+	transform: scale(1.1); /* Makes the button 10% larger */
+	
+
+
+
+}
+
+.typeherehoriz {
+	flex-direction: row;
+	gap: 10px;
+	padding: 10px;
+	display: inline-flex;
+
+}
+
+.left {
+	position: absolute;
+	right: 0px;
+}
+
+.bttbox {
+	width: 100vw;
+	height: 100px;
+	
+	justify-content: left;
+	align-items: left;	
+	z-index: 3;
+	position: absolute;
+	bottom: 100px;
+	border: white solid 3px;
+	padding: 40px 7px 0px 0px;
+	background-color: #4B27FF;
+	text-align: right;
+}
+
+.bttbutton {
+	font-family: "objektiv-mk1", sans-serif;
+	font-size: 1em;
+	font-weight: 700;
+	font-style: normal;
+	width: 200px;
+	height: 50px;
+	justify-content: center;
+	align-items: center;	
+	margin-right: 300px;
+	position: relative;
+	border: white solid 2px;
+	background-color: #4B27FF;
+	color: white;
+
+	
+}
+
+.socialrow {
+	flex-direction: row;
+	gap: 20px;
+	justify-content: center;
+	display: inline-flex;
+	position: relative;
+	height: 50px;
+	/* border: solid black 1px; */
+	top: 40px;
+}
+
+.iconcircle {
+	width: 60px;
+	height: 60px;
+	display: inline-flex;
+
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	background-image: url(../images/Ellipse\ 11.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	/* border: #000000 solid 1px; */
+	flex-shrink: 0;
+margin: 10px;
+}
+
+
+.blocktitle6 {
+	font-size: 1.4em;
+	width: 400px;
+	color: white;
+	align-items: left;
+	justify-content: left;
+	text-align: center;
+	position:relative;
+	left: 250px;
+	top: 20px;
+
+}
+
+.ig {
+	top: 0px;
+	left: 0px;
+
+}
+
+.copatixcontainer {
+	width: 100vw;
+	height: 600px;
+	/* border: white solid 2px; */
+	position: absolute;
+	top: 1500px;
+	display: inline-flex;
+	flex-direction: row;
+	gap: 60px;
+	justify-content: center;
+	align-items: center;
+}
+
+.ticketbox {
+	width: 300px;
+	height: 500px;
+	border-radius: 14px;
+	justify-content: center;
+	align-items: center;
+	background: rgba(188, 172, 255, 0.90);
+	display: inline-flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.ticketname {
+	font-family: "Krona One", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1.6em;
+	color: black;
+	text-align: center;
+}
+
+.ticketicon {
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	width: 50px;
+	height: 50px;
+	/* border: #000000 solid 1px; */
+	background-image: url(../images/Folding\ Chair.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: inline-flex;
+
+}	
+.ticketicon2 {
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	width: 50px;
+	height: 50px;
+	/* border: #000000 solid 1px; */
+	background-image: url(../images/Chair\ \(1\).png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: inline-flex;
+
+}	
+
+.ticketicon3 {
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	width: 50px;
+	height: 50px;
+	/* border: #000000 solid 1px; */
+	background-image: url(../images/Women\ Shoes.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: inline-flex;
+
+}	
+.ticketprice {
+	font-family: "Krona One", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 2.2em;
+	color: #4B27FF;
+	text-align: center;
+}
+
+.ticketactionbutton { 
+	display: inline-flex;
+	height: 20px;
+	padding: 8px 24px;
+	justify-content: center;
+	align-items: center;
+	border-radius: 8px;
+	border: #4B27FF solid 8px; /* Variant 0 color */
+	background: #4B27FF;
+	position: relative;
+	z-index: 2;
+	font-family: "objektiv-mk1", sans-serif;
+	font-size: 1em;
+	font-weight: 700;
+	font-style: normal;
+	color: white;
+}
+
+.ticketspecs {
+	font-family:"objektiv-mk1",sans-serif;
+	font-weight:400;
+	font-style: normal;
+	font-size: 1em;
+	position: relative;
+	color: black;
+	line-height: 2;
+	text-align: center;
+}
+
+.costumesimg {
+	background-image: url(../images/e2814754298b31570a462725c1245bb7.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	height: 550px;
+	width: 550px;
+	top: 100px;
+	left: 100px;
+	overflow: hidden;
+}
+
+.blockcopycopa {
+	font-family:"objektiv-mk1",sans-serif;
+	font-weight:400;
+	font-style: normal;
+	color: black;
+	font-family:"objektiv-mk1",sans-serif;
+	font-weight:400;
+	font-style: normal;
+	font-size: .95em;
+	position: absolute;
+	line-height: 1.5;
+	width: 340px;
+	top: 280px;
+	left: 750px;
+}
+
+.panocopa {
+	width: 1200px;
+	height: 500px;
+	background-image: url(../images/eadcaa58f0b3a0d2ab01faa37c3e31ea.png);
+	background-size: cover;
+	background-position-y: -150px;
+	background-repeat: no-repeat;
+	position: relative;
+	top: 40px;
+	left: 0px;
+	overflow: hidden;
+
+}
+
+
+
+.panocopy {
+	font-family:"objektiv-mk1",sans-serif;
+	font-weight:400;
+	font-style: normal;
+	color: black;
+	font-family:"objektiv-mk1",sans-serif;
+	font-weight:400;
+	font-style: normal;
+	font-size: .95em;
+	position: relative;
+	line-height: 1.5;
+	width: 1000px;
+	left: 100px;
+	top: 100px;
+
+}
+
+.panobold {
+	font-family:"objektiv-mk1",sans-serif;
+	font-weight:700;
+	font-size: 1.1em;
+
+
+}
+
+.panotitle {
+	font-family: "Krona One", sans-serif;
+  	font-weight: 400;
+ 	 font-style: normal;
+	font-size: 2em;
+	position: absolute;
+	text-align: left;
+	line-height: 1.1;
+	width: 1000px;
+	top: 40px;
+}
+
+.panoblocknews {
+	
+	width: 1200px;
+	height: 400px;
+	align-items: left;
+	justify-content: left;
+	position: relative;
+	background-color: #D8D0F7;
+	overflow: hidden;
+	/* border: solid black 1px; */
+	display: inline-flex;
+	flex-direction: column;
+
+}
+
+.newslettersubhead {
+	position: relative;
+	font-size: 1em;
+	/* color: white; */
+	font-family:"objektiv-mk1",sans-serif;
+	font-weight:400;
+	font-style: normal;
+	line-height: 1.3;
+	color: black;
+	padding: 10px;
+	top: 70px;
+	left: 90px;
+
+}
+
+.typeherenews{
+	display: flex;
+	height: 45px;
+	width: 350px;
+	padding: 20px;
+	justify-content: left;
+	align-items: center;
+	border-radius: 8px;
+	border:  #f2efff solid 1px; /* Variant 0 color */
+	background: #f2efff;
+	position: relative;
+	z-index: 2;
+	font-family: "objektiv-mk1", sans-serif;
+	font-size: .9em;
+	font-weight: 400;
+	font-style: normal;
+	color: grey;
+
+
+}
+
+.subbuttonews {
+	display: inline-flex;
+	height: 40px;
+	width: 280px;
+	padding: 14px 24px;
+	justify-content: center;
+	align-items: center;
+	border-radius: 8px;
+	border: #4B27FF solid 8px; /* Variant 0 color */
+	background: #4B27FF;
+	position: relative;
+	z-index: 2;
+	font-family: "objektiv-mk1", sans-serif;
+	font-size: 1em;
+	font-weight: 700;
+	font-style: normal;
+	color: white;
+	transition: transform 0.2s ease; /* Smooth scaling */
+
+}
+
+.subbuttonews:active {
+	transform: scale(1.1); /* Makes the button 10% larger */
+	transition: transform 0.2s ease; /* Smooth scaling */
+	background-color: #FF45AB;
+	border: solid 8px #FF45AB;
+
+}
+.newshoriz {
+	flex-direction: row;
+	display: inline-flex;
+	gap: 10px;
+	align-items: center;
+	justify-content: center;
+	width: 1200px;
+	height: 100px;
+	/* border: #000000 solid 1px; */
+	position: relative;
+	top: 50px;
+}
+
+
+.lavish {
+	background-image: url(../images/36977516808f17dec6630e5eba875d29.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.theme {
+	background-image: url(../images/ad6843711cabf8358cbd631b2b428f2d.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.tixinfocontainer {
+width: 100vw;
+height: 400px;
+/* border: solid black 1px; */
+align-items: center;
+display: inline-flex;
+flex-direction: row;
+gap: 20px;
+justify-content: center;
+position: absolute;
+top: 1600px;
+
+
+}
+.infobox {
+	width: 200px;
+	height: 400px;
+	background-color: #cdc3ff;
+	border-radius: 16px;
+	border: #cdc3ff solid 10px;
+	align-items: left;
+display: inline-flex;
+flex-direction: column;
+justify-content: top;
+gap: 12px;
+
+
+
+
+}
+
+.infopic {
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 200px;
+	height: 240px;
+	border-radius: 8px;
+
+}
+
+.grand {
+	background-image: url(../images/d1dcc781dd1e3dd318feca576c516ce7.jpeg);
+
+}
+
+.allo {
+	background-image: url(../images/127c938e4711b0a672443196cc178b64.jpeg);
+	background-position: 25%;
+	background-size: 260%;
+}
+.covered {
+	background-image: url(../images/fc19518c063c17fb7bdc04530b28ee0e.jpeg);
+	background-position: 85%;
+
+
+}
+
+.front {
+background-image: url(../images/c16749411268658d4198b2b68579e369.jpeg);
+background-position: 45%;
+
+}
+
+.foliapic {
+	background-image: url(../images/ad9d319edc0e5c2d10259a2120dbcc7e.jpeg);
+
+}
+
+.infoname {
+	font-family:"objektiv-mk1",sans-serif;
+	font-weight:700;
+	font-size: 1.1em;
+	line-height: 1.4;
+	margin-left: 10px;
+	margin-right: 10px;
+
+
+}
+.infoactionbutton {
+	position: absolute;
+	bottom: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	font-family: "objektiv-mk1", sans-serif;
+	font-size: .8em;
+	font-weight: 400;
+	font-style: normal;
+	height: 20px;
+	width: 100px;
+}
+
+.arrowlearnmore {
+	color: white;
+	padding: 8px ;
+	left: 6px;
+	position: relative;
+}
+
+
+.ticketblock {
+	width: 1200px;
+	height: 1200px;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	flex-direction: row-reverse;
+	display: flex;
+	overflow: hidden;
+	/* border: solid black 1px; */
+	gap: 30px;
+
+	/* border-bottom: solid gray 1px; */
+
+}
+.ticketinfoblockright {
+	width: 450px;
+	height: 400px;
+	/* border: solid black 2px; */
+	display: inline-flex;
+	flex-direction: column;
+	gap: 20px;
+	right: 0px;
+	position: relative;
+
+}
+.map {
+	width: 80px;
+	height: 35px;
+	font-family: "objektiv-mk1", sans-serif;
+	font-size: 1em;
+	font-weight: 700;
+	border-radius: 9px;
+	font-style: normal;
+	background-color: #ECEBF1;
+	border: solid black 2px;
+	flex-direction: row-reverse;
+	display: flex;
+	padding: 3px;
+	justify-content: center;
+	align-items: center;
+	gap: 2px;
+	position: relative;
+	top: 0px;
+}
+
+.ticketsubhead {
+	font-family: "objektiv-mk1", sans-serif;
+	font-size: 1em;
+	font-weight: 400;
+	font-style: italic;
+	width: 600px;
+	height: 20px;
+	position: relative;
+	top: 0px;
+
+}
+
+
+.infotitle {
+	font-family: "Krona One", sans-serif;
+  	font-weight: 400;
+ 	 font-style: normal;
+	font-size: 2em;
+	color: black;
+	position: relative;
+	text-align: left;
+	display: inline-flex;
+
+}
+
+.grandstands {
+	width: 550px;
+	height: 450px;
+	/* border: solid black 1px; */
+	position: relative;
+	background-image: url(../images/2cd2cb3959d8e3151f75b409b6e3bbd7.jpeg);
+	background-repeat: no-repeat;
+	background-size: 160%;
+	background-position: 60%;
+	background-position-y: -120px;
+}
+
+.blockcopyticket {
+	font-family:"objektiv-mk1",sans-serif;
+	font-weight:400;
+	font-style: normal;
+	color: black;
+	font-family:"objektiv-mk1",sans-serif;
+	font-weight:400;
+	font-style: normal;
+	font-size: .95em;
+	position: relative;
+	line-height: 1.5;
+	width: 340px;
+}
+
+.allocated {
+	width: 550px;
+	height: 450px;
+	/* border: solid black 1px; */
+	position: relative;
+	background-image: url(../images/127c938e4711b0a672443196cc178b64.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.purplebuttonsmall { 
+	display: inline-flex;
+	height: 30px;
+	width: 120px;
+	padding: 14px 8px;
+	justify-content: center;
+	align-items: center;
+	border-radius: 8px;
+	border: #4B27FF solid 8px; /* Variant 0 color */
+	background: #4B27FF;
+	color: white;
+
+	position: relative;
+	z-index: 2;
+	font-family: "objektiv-mk1", sans-serif;
+	font-size: 1em;
+	font-weight: 700;
+	font-style: normal;
+	transition: all .2s ease;
+
+}
+
+.purplebuttonsmall:active {
+	background-color: #FF45AB;
+	color: white;
+	border: #FF45AB solid 8px; /* Variant 0 color */
+	transition: all .2s ease;
+	transform: scale(1.1); /* Makes the button 10% larger */
+
+
+}
+
+.frontbox {
+	background-image: url(../images/c16749411268658d4198b2b68579e369.jpeg);
+	width: 550px;
+	height: 450px;
+	/* border: solid black 1px; */
+	position: relative;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.foliapic2 {
+	background-image: url(../images/e4299c9902d1211ae63aa927ab700dc8.jpeg);
+	width: 550px;
+	height: 450px;
+	/* border: solid black 1px; */
+	position: relative;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.spacer {
+	width: 1200px;
+	height: 140px;
+	position: relative;
+	/* border: #000000 solid 1px; */
+	/* border-bottom: grey solid 1px; */
+
+}
+
+.buynowspacer {
+	width: 1200px;
+	height: 340px;
+	position: relative;
+	/* border-top: grey solid 1px; */
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+}
+
+.bookers {
+	position: relative;
+	z-index: 2;
+	font-family: "objektiv-mk1", sans-serif;
+	font-size: 1.3em;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.purplebuttonsymbol2 {
+	display: inline-flex;
+	height: 50px;
+	width: 280px;
+	padding: 12px 12px;
+	justify-content: center;
+	align-items: center;
+	border-radius: 8px;
+	border: #4B27FF solid 8px; /* Variant 0 color */
+	background: #4B27FF;
+	position: relative;
+	z-index: 2;
+	font-family: "objektiv-mk1", sans-serif;
+	font-size: 1em;
+	font-weight: 700;
+	font-style: normal;
+	color: white;
+	transition: all .2s ease;
+
+}
+
+
+.purplebuttonsymbol2:active {
+	background-color: #FF45AB;
+	color: white;
+	border: #FF45AB solid 8px; /* Variant 0 color */
+	transition: all .2s ease;
+	transform: scale(1.1); /* Makes the button 10% larger */
+
+
+
+}
+
+.typable-button {
+	display: inline-block;
+	padding: 10px 20px;
+	font-size: 16px;
+	text-align: left;
+	color: white;
+	background-color: #4B27FF;
+	border: 2px solid white;
+	border-radius: 8px;
+	cursor: text;
+	outline: none;
+	transition: background-color 0.3s ease, color 0.3s ease;
+	display: flex;
+	height: 15px;
+	width: 200px;
+	justify-content: left;
+	position: relative;
+	z-index: 2;
+	font-family: "objektiv-mk1", sans-serif;
+	font-size: .9em;
+	font-weight: 400;
+	font-style: normal;
+  }
+  
+  .typable-button:focus {
+	background-color: #230c92;
+	color: white;
+	border-color: rgb(59, 206, 255);
+  }
+
+  .typable-button2 {
+	cursor: text;
+	outline: none;
+	transition: background-color 0.3s ease, color 0.3s ease;
+	justify-content: left;
+	position: relative;
+	display: flex;
+	height: 30px;
+	width: 330px;
+	padding: 20px;
+	justify-content: left;
+	align-items: center;
+	border-radius: 8px;
+	border:  #f2efff solid 1px; /* Variant 0 color */
+	background: #f2efff;
+	position: relative;
+	z-index: 2;
+	font-family: "objektiv-mk1", sans-serif;
+	font-size: .9em;
+	font-weight: 400;
+	font-style: normal;
+	color: grey;
+	padding: 8px 16px;
+
+  }
+  
+  .typable-button2:focus {
+	background-color: white;
+	color: white;
+	border-color: white;
+  }
+
